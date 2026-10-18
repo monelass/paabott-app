@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Paabot",
+    "slug": "paabot",
+    "owner": "celiceee",
+    "scheme": "paabotapp",
+    "version": "1.0.0",
+    "icon": "./src/assets/logo/icon.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFFFFF",
+    "splash": {
+      "backgroundColor": "#0F9D58"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Paabot uses your location to match you with nearby drivers and calculate delivery ETAs."
+      }
+    },
+    "android": {
+      "package": "com.paabot.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Paabot uses your location to track deliveries and calculate ETA."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6d4bb470-ad71-48b7-ab57-2683cbffc673"
+      }
+    }
+  }
+}
